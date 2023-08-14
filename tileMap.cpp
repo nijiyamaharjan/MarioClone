@@ -7,9 +7,6 @@ TileMap::TileMap()
 
 	coinBuffer.loadFromFile(COIN_SOUND);
 	coinSound.setBuffer(coinBuffer);
-
-	winBuffer.loadFromFile(WIN_SOUND);
-	winSound.setBuffer(winBuffer);
 }
 
 void TileMap::draw(sf::RenderTarget& target, sf::RenderStates states) const
@@ -129,7 +126,6 @@ int TileMap::collision(Entity& Entity, GameInfo& gameInfo)
 						//}
 						if (tiles[i * width + j] == 9)		// if END game
 						{
-							winSound.play();
 							return 9;
 						}
 					}
