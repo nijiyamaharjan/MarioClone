@@ -58,9 +58,16 @@ Available mobs names are: Turtle, Spikey, FlyTur, Bonus.
 </p>
 
 ### Specification:
+
+
 <p align="center">
-  <img width="90%" src="images/entities.png">
-  <img width="50%" src="images/entities2.png">
+  <b>Game Flow</b><br><br>
+  <img width="90%" src="images/gameflow.png"><br><br>
+</p>
+
+<p align="center">  
+  <b>Code Structure</b><br><br>
+  <img width="90%" src="images/code_structure.png">
 </p>
 
 **_Game_** class is the main game controller. Responsible for adding mobs, triggering tileMap class. map managament, updating objects and displaying menu if needed.
